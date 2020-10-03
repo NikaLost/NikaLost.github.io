@@ -741,6 +741,29 @@ footer p {
     border-radius: 0;
   }
 
+  #references .wrapper-ref {
+    width: 100%;
+    display: inline;
+    float: left;
+  }
+
+  #references .wrapper-ref .card {
+    margin: 15px auto;
+  }
+
+  #references .wrapper-ref .card .face {
+    transform: translateY(0);
+  }
+
+  #references .wrapper-ref .card .face .content img {
+    opacity: 1;
+    height: 50px;
+  }
+
+  #references .wrapper-ref .card .face.face1 {
+    height: 100px;
+  }
+
   form input, form textarea {
     width: 70%;
   }
