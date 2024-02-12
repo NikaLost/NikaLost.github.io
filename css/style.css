@@ -1,16 +1,34 @@
 :root {
   font-size: 16px;
 }
-html, body {margin: 0px; padding: 0px; height: 100%; text-align: center; scroll-behavior: smooth;}
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  text-align: center;
+  scroll-behavior: smooth;
+}
 
-section{min-height: 100%;}
+section {
+  min-height: 100%;
+}
 
-a {text-decoration: none;}
+a {
+  text-decoration: none;
+}
 
-li {list-style-type: none;}
+li {
+  list-style-type: none;
+}
 
-h1, h2, h3, a, button, address{
-  font-family: 'Roboto', sans-serif;
+h1,
+h2,
+h3,
+a,
+button,
+address {
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   color: #494949;
   text-transform: uppercase;
@@ -27,15 +45,21 @@ h3 {
   padding: 6% 10px 5px 10px;
   margin-bottom: 5px;
   color: #fff;
-  background: -webkit-linear-gradient(rgba(35, 29, 112,  0) 0%, rgba(35, 29, 112,  0.1) 30%, rgba(35, 29, 112,  0.5) 70%, rgba(35, 29, 112,  0.9) 100%);
+  background: -webkit-linear-gradient(
+    rgba(35, 29, 112, 0) 0%,
+    rgba(35, 29, 112, 0.1) 30%,
+    rgba(35, 29, 112, 0.5) 70%,
+    rgba(35, 29, 112, 0.9) 100%
+  );
   width: 100%;
   max-width: 1000px;
   margin: 0 auto;
   border-radius: 15px;
 }
 
-h4, p {
-  font-family: 'Roboto Slab', serif;
+h4,
+p {
+  font-family: "Roboto Slab", serif;
   color: #494949;
 }
 
@@ -57,14 +81,23 @@ hr {
 }
 
 /*für verzögerung bei aufleuchten und unterschiedliche Browser */
-#logo, li, img, .button, .fa-bars {
-  transition: all 300ms; -webkit-transition: all 300ms; -moz-transition: all 300ms; -o-transition: all 300ms;
+#logo,
+li,
+img,
+.button,
+.fa-bars {
+  transition: all 300ms;
+  -webkit-transition: all 300ms;
+  -moz-transition: all 300ms;
+  -o-transition: all 300ms;
 }
-.fa-bars {display: none;}
+.fa-bars {
+  display: none;
+}
 
 /* HEADER *********************************/
 
-header{
+header {
   width: 100%;
   height: 65px;
   position: fixed;
@@ -114,8 +147,10 @@ header nav ul li:hover {
 #home {
   background: url(../img/landing7.jpg);
   background-position: center center;
-  background-size: cover;
+  background-size: 150%;
   background-attachment: fixed;
+  overflow: hidden;
+  position: relative;
 }
 
 #home .logo-home {
@@ -154,7 +189,6 @@ header nav ul li:hover {
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
-  padding-bottom: 200px;
 }
 
 #services hr {
@@ -162,7 +196,7 @@ header nav ul li:hover {
 }
 
 #services ul {
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   color: #494949;
   font-size: 1.2rem;
   line-height: 2rem;
@@ -187,14 +221,50 @@ header nav ul li:hover {
 }
 
 #services .service-container.left.container1 {
-  background: -webkit-linear-gradient(left, #fff 0%, #fff 40%, rgba(255, 255, 255, 0.97) 43%, rgba(255, 255, 255, 0.7) 55%, rgba(255, 255, 255, 0) 70%, rgba(255, 255, 229, 0) 100%),url(../img/opt9b.jpg);
-  background: -o-linear-gradient(left, #fff 0%, #fff 40%, rgba(255, 255, 255, 0.97) 43%, rgba(255, 255, 255, 0.7) 55%, rgba(255, 255, 255, 0) 70%, rgba(229, 229, 229, 0) 100%),url(../img/opt9b.jpg);
+  background: -webkit-linear-gradient(
+      left,
+      #fff 0%,
+      #fff 40%,
+      rgba(255, 255, 255, 0.97) 43%,
+      rgba(255, 255, 255, 0.7) 55%,
+      rgba(255, 255, 255, 0) 70%,
+      rgba(255, 255, 229, 0) 100%
+    ),
+    url(../img/opt9b.jpg);
+  background: -o-linear-gradient(
+      left,
+      #fff 0%,
+      #fff 40%,
+      rgba(255, 255, 255, 0.97) 43%,
+      rgba(255, 255, 255, 0.7) 55%,
+      rgba(255, 255, 255, 0) 70%,
+      rgba(229, 229, 229, 0) 100%
+    ),
+    url(../img/opt9b.jpg);
   background-size: cover;
 }
 
 #services .service-container.left.container2 {
-  background: -webkit-linear-gradient(left, #fff 0%, #fff 40%, rgba(255, 255, 255, 0.97) 43%, rgba(255, 255, 255, 0.7) 55%, rgba(255, 255, 255, 0) 70%, rgba(255, 255, 229, 0) 100%),url(../img/opt12.jpg);
-  background: -o-linear-gradient(left, #fff 0%, #fff 40%, rgba(255, 255, 255, 0.97) 43%, rgba(255, 255, 255, 0.7) 55%, rgba(255, 255, 255, 0) 70%, rgba(229, 229, 229, 0) 100%),url(../img/opt12.jpg);
+  background: -webkit-linear-gradient(
+      left,
+      #fff 0%,
+      #fff 40%,
+      rgba(255, 255, 255, 0.97) 43%,
+      rgba(255, 255, 255, 0.7) 55%,
+      rgba(255, 255, 255, 0) 70%,
+      rgba(255, 255, 229, 0) 100%
+    ),
+    url(../img/opt12.jpg);
+  background: -o-linear-gradient(
+      left,
+      #fff 0%,
+      #fff 40%,
+      rgba(255, 255, 255, 0.97) 43%,
+      rgba(255, 255, 255, 0.7) 55%,
+      rgba(255, 255, 255, 0) 70%,
+      rgba(229, 229, 229, 0) 100%
+    ),
+    url(../img/opt12.jpg);
   background-size: cover;
 }
 
@@ -203,30 +273,97 @@ header nav ul li:hover {
 }
 
 #services .service-container.right.container1 {
-  background: -webkit-linear-gradient(right, #fff 0%, #fff 40%, rgba(255, 255, 255, 0.97) 43%, rgba(255, 255, 255, 0.7) 55%, rgba(255, 255, 255, 0) 70%, rgba(255, 255, 229, 0) 100%),url(../img/opt8.jpg);
-  background: -o-linear-gradient(right, #fff 0%, #fff 40%, rgba(255, 255, 255, 0.97) 43%, rgba(255, 255, 255, 0.7) 55%, rgba(255, 255, 255, 0) 70%, rgba(229, 229, 229, 0) 100%),url(../img/opt8.jpg);
+  background: -webkit-linear-gradient(
+      right,
+      #fff 0%,
+      #fff 40%,
+      rgba(255, 255, 255, 0.97) 43%,
+      rgba(255, 255, 255, 0.7) 55%,
+      rgba(255, 255, 255, 0) 70%,
+      rgba(255, 255, 229, 0) 100%
+    ),
+    url(../img/opt8.jpg);
+  background: -o-linear-gradient(
+      right,
+      #fff 0%,
+      #fff 40%,
+      rgba(255, 255, 255, 0.97) 43%,
+      rgba(255, 255, 255, 0.7) 55%,
+      rgba(255, 255, 255, 0) 70%,
+      rgba(229, 229, 229, 0) 100%
+    ),
+    url(../img/opt8.jpg);
   background-size: cover;
 }
 
 #services .service-container.right.container2 {
-  background: -webkit-linear-gradient(right, #fff 0%, #fff 40%, rgba(255, 255, 255, 0.97) 43%, rgba(255, 255, 255, 0.7) 55%, rgba(255, 255, 255, 0) 70%, rgba(255, 255, 229, 0) 100%),url(../img/banner4.jpg);
-  background: -o-linear-gradient(right, #fff 0%, #fff 40%, rgba(255, 255, 255, 0.97) 43%, rgba(255, 255, 255, 0.7) 55%, rgba(255, 255, 255, 0) 70%, rgba(229, 229, 229, 0) 100%),url(../img/banner4.jpg);
+  background: -webkit-linear-gradient(
+      right,
+      #fff 0%,
+      #fff 40%,
+      rgba(255, 255, 255, 0.97) 43%,
+      rgba(255, 255, 255, 0.7) 55%,
+      rgba(255, 255, 255, 0) 70%,
+      rgba(255, 255, 229, 0) 100%
+    ),
+    url(../img/banner4.jpg);
+  background: -o-linear-gradient(
+      right,
+      #fff 0%,
+      #fff 40%,
+      rgba(255, 255, 255, 0.97) 43%,
+      rgba(255, 255, 255, 0.7) 55%,
+      rgba(255, 255, 255, 0) 70%,
+      rgba(229, 229, 229, 0) 100%
+    ),
+    url(../img/banner4.jpg);
   background-size: cover;
 }
 
 #services .service-container.left .service-title {
   padding: 10px 0 10px 20px;
   color: #fff;
-  background: -webkit-linear-gradient(left, #231D70 0%, #231D70 40%, rgba(35, 29, 112,  0.97) 43%, rgba(35, 29, 112, 0.9) 55%, rgba(35, 29, 112, 0.4) 80%, rgba(35, 29, 112, 0) 100%);
-  background: -o-linear-gradient(left, #231D70 0%, #231D70 40%, rgba(255, 255, 255, 0.97) 43%, rgba(255, 255, 255, 0.9) 55%, rgba(255, 255, 255, 0.8) 80%, rgba(229, 229, 229, 0) 100%);
+  background: -webkit-linear-gradient(
+    left,
+    #231d70 0%,
+    #231d70 40%,
+    rgba(35, 29, 112, 0.97) 43%,
+    rgba(35, 29, 112, 0.9) 55%,
+    rgba(35, 29, 112, 0.4) 80%,
+    rgba(35, 29, 112, 0) 100%
+  );
+  background: -o-linear-gradient(
+    left,
+    #231d70 0%,
+    #231d70 40%,
+    rgba(255, 255, 255, 0.97) 43%,
+    rgba(255, 255, 255, 0.9) 55%,
+    rgba(255, 255, 255, 0.8) 80%,
+    rgba(229, 229, 229, 0) 100%
+  );
 }
 
 #services .service-container.right .service-title {
   padding: 10px 20px 10px 0;
   color: #fff;
-  background: -webkit-linear-gradient(right, #231D70 0%, #231D70 40%, rgba(35, 29, 112,  0.97) 43%, rgba(35, 29, 112, 0.9) 55%, rgba(35, 29, 112, 0.4) 80%, rgba(35, 29, 112, 0) 100%);
-  background: -o-linear-gradient(right, #231D70 0%, #231D70 40%, rgba(255, 255, 255, 0.97) 43%, rgba(255, 255, 255, 0.9) 55%, rgba(255, 255, 255, 0.8) 80%, rgba(229, 229, 229, 0) 100%);
-
+  background: -webkit-linear-gradient(
+    right,
+    #231d70 0%,
+    #231d70 40%,
+    rgba(35, 29, 112, 0.97) 43%,
+    rgba(35, 29, 112, 0.9) 55%,
+    rgba(35, 29, 112, 0.4) 80%,
+    rgba(35, 29, 112, 0) 100%
+  );
+  background: -o-linear-gradient(
+    right,
+    #231d70 0%,
+    #231d70 40%,
+    rgba(255, 255, 255, 0.97) 43%,
+    rgba(255, 255, 255, 0.9) 55%,
+    rgba(255, 255, 255, 0.8) 80%,
+    rgba(229, 229, 229, 0) 100%
+  );
 }
 
 #services .service-title {
@@ -291,7 +428,7 @@ header nav ul li:hover {
 
 .wrapper-ref .card .face.face1 {
   position: relative;
-  background: #231D70;
+  background: #231d70;
   display: flex;
   justify-content: center;
   align-items: start;
@@ -301,7 +438,7 @@ header nav ul li:hover {
 
 .wrapper-ref .card:hover .face.face1 {
   transform: translateY(0);
-  background: #231D70;
+  background: #231d70;
 }
 
 .wrapper-ref .card .face.face2 {
@@ -331,7 +468,7 @@ header nav ul li:hover {
 }
 
 .wrapper-ref .card .face.face2 .content a:hover {
-  background: #231D70;
+  background: #231d70;
   color: #fff;
 }
 
@@ -367,7 +504,9 @@ header nav ul li:hover {
   background: #fff;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -398,7 +537,10 @@ header nav ul li:hover {
   -o-transform: scale(1.02);
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
-  transition: all 300ms; -webkit-transition: all 300ms; -moz-transition: all 300ms; -o-transition: all 300ms;
+  transition: all 300ms;
+  -webkit-transition: all 300ms;
+  -moz-transition: all 300ms;
+  -o-transition: all 300ms;
 }
 
 #about .card img {
@@ -411,10 +553,11 @@ header nav ul li:hover {
 
 #about .container span {
   font-size: 1.1rem;
-  color: #231D70;
+  color: #231d70;
 }
 
-#about .container::after, .row::after {
+#about .container::after,
+.row::after {
   content: "";
   clear: both;
   display: table;
@@ -445,7 +588,7 @@ header nav ul li:hover {
 }
 
 #about .button:hover {
-  background-color: #231D70;
+  background-color: #231d70;
   color: #fff;
 }
 
@@ -456,8 +599,9 @@ header nav ul li:hover {
   background: rgba(255, 0, 0, 0);
 }
 
-form input, textarea {
-  font-family: 'Roboto Slab' serif;
+form input,
+textarea {
+  font-family: "Roboto Slab" serif;
   font-size: 15px;
   margin-bottom: 10px;
   border-radius: 2px;
@@ -471,13 +615,13 @@ form input:first-child {
 }
 
 form input {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   width: 552px;
   height: 30px;
 }
 
 form textarea {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   width: 552px;
   height: 200px;
   padding-top: 10px;
@@ -485,18 +629,26 @@ form textarea {
 }
 
 .input_text {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #494949;
   padding-left: 10px;
 }
 
-::-webkit-input-placeholder {color: #999999;}
-::-moz-placeholder {color: #999999;}
-:-ms-input-placeholder {color: #999999;}
-:-moz-placeholder {color: #999999;}
+::-webkit-input-placeholder {
+  color: #999999;
+}
+::-moz-placeholder {
+  color: #999999;
+}
+:-ms-input-placeholder {
+  color: #999999;
+}
+:-moz-placeholder {
+  color: #999999;
+}
 
 .button {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   background-color: #f0f0f0;
   text-transform: uppercase;
@@ -506,13 +658,13 @@ form textarea {
 }
 
 .button:hover {
-  background-color: #231D70;
+  background-color: #231d70;
   color: #fff;
 }
 
 .address {
   margin-top: 40px;
-  font-family: 'Roboto Slab' serif;
+  font-family: "Roboto Slab" serif;
   font-style: normal;
   text-transform: none;
   line-height: 2rem;
@@ -530,8 +682,6 @@ form textarea {
 .address .mail a {
   text-transform: none;
 }
-
-
 
 /* FOOTER *******************************/
 
@@ -566,7 +716,6 @@ footer p {
   margin: 0;
 }
 
-
 /* MEDIA QUERIES *******************************/
 
 /* TABLETS */
@@ -592,7 +741,7 @@ footer p {
     font-size: 12px;
   }
 
-  #home h1{
+  #home h1 {
     font-size: 70px;
   }
 
@@ -608,7 +757,8 @@ footer p {
     padding-top: 12%;
   }
 
-  #profil1, #profil2 {
+  #profil1,
+  #profil2 {
     width: 100%;
     float: none;
   }
@@ -635,7 +785,8 @@ footer p {
     height: auto;
   }
 
-  form input, form textarea {
+  form input,
+  form textarea {
     width: 60%;
   }
 
@@ -646,9 +797,7 @@ footer p {
   footer {
     padding-top: 300px;
   }
-
 }
-
 
 /* MOBILE */
 @media screen and (max-width: 600px) {
@@ -709,7 +858,7 @@ footer p {
     width: 200px;
   }
 
-  #home h1{
+  #home h1 {
     font-size: 40px;
   }
 
@@ -764,12 +913,12 @@ footer p {
     height: 100px;
   }
 
-  form input, form textarea {
+  form input,
+  form textarea {
     width: 70%;
   }
 
   .button {
     width: 72%;
   }
-
 }
