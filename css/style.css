@@ -594,88 +594,43 @@ header nav ul li:hover {
 
 /* CONTACT *******************************/
 
+#contact {
+  background: url(../img/landing3.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 #contact h3 {
-  color: #494949;
-  background: rgba(255, 0, 0, 0);
+  background: rgba(0, 0, 0, 0);
+  color: white;
+  padding-top: 200px;
 }
-
-form input,
-textarea {
-  font-family: "Roboto Slab" serif;
-  font-size: 15px;
-  margin-bottom: 10px;
-  border-radius: 2px;
-  border: 2px solid;
-  border-color: #494949;
-  outline: none;
-}
-
-form input:first-child {
-  margin-top: 10px;
-}
-
-form input {
-  font-family: "Roboto", sans-serif;
-  width: 552px;
-  height: 30px;
-}
-
-form textarea {
-  font-family: "Roboto", sans-serif;
-  width: 552px;
-  height: 200px;
-  padding-top: 10px;
-  resize: none;
-}
-
-.input_text {
-  font-family: "Roboto", sans-serif;
-  color: #494949;
-  padding-left: 10px;
-}
-
-::-webkit-input-placeholder {
-  color: #999999;
-}
-::-moz-placeholder {
-  color: #999999;
-}
-:-ms-input-placeholder {
-  color: #999999;
-}
-:-moz-placeholder {
-  color: #999999;
-}
-
-.button {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  background-color: #f0f0f0;
-  text-transform: uppercase;
-  color: #333;
-  height: 40px;
-  width: 552px;
-}
-
-.button:hover {
-  background-color: #231d70;
-  color: #fff;
+#contact hr {
+  background: white;
 }
 
 .address {
-  margin-top: 40px;
+  background: white;
+  color: #3f3f3f;
   font-family: "Roboto Slab" serif;
   font-style: normal;
   text-transform: none;
   line-height: 2rem;
   font-size: 1.3rem;
+  width: 400px;
+  margin: auto;
+  padding: 15px;
+  border-radius: 15px;
 }
 
 .address .phone {
+  color: #3f3f3f;
   margin-top: 20px;
 }
 
 .address i {
+  color: #3f3f3f;
   margin-right: 10px;
 }
 
@@ -686,13 +641,7 @@ form textarea {
 /* FOOTER *******************************/
 
 footer {
-  background: url(../img/landing3.jpg);
-  background-position: center center;
-  background-size: cover;
-  background-attachment: fixed;
-  margin-top: 50px;
   width: 100%;
-  padding-top: 500px;
 }
 
 .footer-text {
@@ -785,22 +734,17 @@ footer p {
     height: auto;
   }
 
-  form input,
-  form textarea {
-    width: 60%;
-  }
-
   .button {
     width: 62%;
-  }
-
-  footer {
-    padding-top: 300px;
   }
 }
 
 /* MOBILE */
 @media screen and (max-width: 600px) {
+  #home {
+    background-size: 300%;
+  }
+
   h2 {
     font-size: 1.3rem;
   }
@@ -913,12 +857,7 @@ footer p {
     height: 100px;
   }
 
-  form input,
-  form textarea {
-    width: 70%;
-  }
-
-  .button {
-    width: 72%;
+  .address {
+    width: 80%;
   }
 }
