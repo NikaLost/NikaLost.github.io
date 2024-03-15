@@ -4,7 +4,7 @@ window.addEventListener("scroll", function () {
   if (window.innerWidth <= 600) {
     console.log("Executing JavaScript for small screens");
     document.querySelector("#home").style.backgroundSize = `${
-      300 * backgroundScale
+      400 * backgroundScale
     }%`;
   } else {
     const translateY = Math.sin(Date.now() / 1000) * 50; // Example vertical movement

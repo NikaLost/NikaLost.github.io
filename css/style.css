@@ -39,24 +39,6 @@ h2 {
   color: #5d7177;
 }
 
-/* WARNING: mobile not correct working yet */
-h3 {
-  font-size: 2.5rem;
-  padding: 6% 10px 5px 10px;
-  margin-bottom: 5px;
-  color: #fff;
-  background: -webkit-linear-gradient(
-    rgba(35, 29, 112, 0) 0%,
-    rgba(35, 29, 112, 0.1) 30%,
-    rgba(35, 29, 112, 0.5) 70%,
-    rgba(35, 29, 112, 0.9) 100%
-  );
-  width: 100%;
-  max-width: 1000px;
-  margin: 0 auto;
-  border-radius: 15px;
-}
-
 h4,
 p {
   font-family: "Roboto Slab", serif;
@@ -78,6 +60,28 @@ hr {
 .wrapper {
   margin: 0 auto;
   width: 70%;
+}
+
+.section-heading {
+  padding-top: 50px;
+}
+
+/* WARNING: mobile not correct working yet */
+.section-heading h3 {
+  font-size: 2.5rem;
+  padding: 10px 10px 10px 10px;
+  margin: 30px auto;
+  color: #2b2e2f;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0)
+  );
+  width: 100%;
+  max-width: 1000px;
+  border-radius: 15px;
 }
 
 /*für verzögerung bei aufleuchten und unterschiedliche Browser */
@@ -189,6 +193,7 @@ header nav ul li:hover {
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
+  padding-bottom: 100px;
 }
 
 #services hr {
@@ -512,7 +517,7 @@ header nav ul li:hover {
 
 #about .row {
   width: 100%;
-  max-width: 1000px;
+  max-width: 800px;
   margin: 0 auto;
 }
 
@@ -528,31 +533,40 @@ header nav ul li:hover {
   margin: 8px;
   background-color: #fff;
   text-align: left;
+  font-size: 0.9rem;
+  border-radius: 10px;
+  padding: 20px;
 }
 
 #about .card:hover {
-  transform: scale(1.02);
-  -webkit-transform: scale(1.02);
-  -moz-transform: scale(1.02);
-  -o-transform: scale(1.02);
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
-  border-radius: 10px;
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
   transition: all 300ms;
   -webkit-transition: all 300ms;
   -moz-transition: all 300ms;
   -o-transition: all 300ms;
 }
 
-#about .card img {
-  width: 100%;
+#about .card-head {
+  display: flex;
+  align-items: center;
 }
 
-#about .container {
-  padding: 20px 25px;
+#about .card-head img {
+  border-radius: 100px;
+  width: 120px;
+  margin-right: 10px;
+}
+
+#about .card-head h2 {
+  display: flex;
+  align-items: center;
 }
 
 #about .container span {
-  font-size: 1.1rem;
   color: #231d70;
 }
 
@@ -602,12 +616,7 @@ header nav ul li:hover {
 }
 
 #contact h3 {
-  background: rgba(0, 0, 0, 0);
-  color: white;
-  padding-top: 200px;
-}
-#contact hr {
-  background: white;
+  margin-top: 200px;
 }
 
 .address {
@@ -742,7 +751,11 @@ footer p {
 /* MOBILE */
 @media screen and (max-width: 600px) {
   #home {
-    background-size: 300%;
+    background-size: 400%;
+  }
+
+  h3 {
+    box-sizing: border-box;
   }
 
   h2 {
@@ -825,9 +838,13 @@ footer p {
     font-size: 1rem;
   }
 
+  #services .wrapper-services {
+    padding-bottom: 100px;
+  }
+
   #services .service-container {
-    border-radius: 0;
-    margin-bottom: 0;
+    border-radius: 10px;
+    margin-bottom: 20px;
   }
 
   #services .service-title {
